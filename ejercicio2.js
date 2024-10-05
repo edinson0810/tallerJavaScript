@@ -12,3 +12,19 @@ if (contraseñaGuardada.toLowerCase()===contraseñaUsuario.toLowerCase()) {
 } else {
     alert("La contraseña es incorrecta."); }
 }
+
+// let contrasena = "contrasena1234";
+
+// while (tru) {
+//     let contraseDos = prompt("Ingrese la contraseña");
+//     if (/^[a-zA-Z0-9]+$/.test(contraseDos)){
+//         if (contraseDos.toLowerCase()===contrasena.toLowerCase()) {
+//             alert("Contraseña correcta");
+//             break;
+//         }else {
+//             alert("contraseña incorrecta");
+//         }
+//     }else{
+//         alert("Por favor ingrese solo valores alfanumerico");
+//     }
+// }

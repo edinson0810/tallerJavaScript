@@ -1,11 +1,13 @@
-let numero1 = parseInt(prompt("ingrese el primer numero"));
-let numero2 = parseInt(prompt("ingrese el segundo numero"));
+let dividendo, divisor, resultado;
+try {
+    dividendo = parseInt(prompt("Ingrese el dividendo"));
+    divisor = parseInt(prompt("Ingrese el divisor"));
+    if ( divisor === 0){
+        throw new error (`El divisor ${divisor}, no se puede realizar la division`);
+    }
 
-if (numero2 === 0) {
-    alert("No se puede dividir en cero, cambie el divisor:");
-} else {
-    let resultado = numero1 / numero2;
-    alert("El resultado de la division es: " + resultado)
+    resultado = dividendo / divisor;
+    alert(`El resultado ${dividendo} / ${divisor} = ${resultado}`);
+} catch (error) {
+    console.error(error.message);
 }
-
-

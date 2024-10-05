@@ -1,13 +1,12 @@
 let edad = prompt("Ingrese su edad");
-edad = parseInt(edad);
+console.log(edad)
 
-if (isNaN(edad) || edad <= 0){
-    alert ("Ingrese un numero valido");
-} else {
-if (edad > 17  ) {
-    alert("Es mayor de edad ");
-} else  {
-    alert("Es menor de edad ");}
+if (edad >0){
+    if (edad >=18){
+        alert("Es mayr de edad");
+    } else{
+        alert("Es menor de edad");
+    }
+} else{
+    alert("Numero no permitido")
 }
-
-
