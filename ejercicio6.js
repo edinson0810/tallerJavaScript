@@ -1,13 +1,13 @@
 
 let nombre = prompt("Ingrese su nombre");
-let sexo = prompt("Ingrese su sexo");
+let sexo = prompt("Ingrese su sexo(F para femenino, M para masculino)").toUpperCase();
 
-if (sexo === "M" && nombre.toLocaleUpperCase() <"M"){
-alert("Perteneces al grupo A.");}
-else if ( sexo === "H" && nombre.toLocaleUpperCase() >"N"){
-    alert("Pertenece al grupo A.")
-}
-else{
-    alert("Pertenece al grupo B.")
-}
-
+let grupo;
+if ((sexo === "F" && nombre.toLocaleUpperCase() <"M") 
+    || 
+(sexo=== "M" && nombre.toLocaleUpperCase() >"N")){
+grupo= "Grupo A";
+} else {
+    grupo = "Grupo B";
+} 
+alert(`Usted pertenece al ${grupo}`);
